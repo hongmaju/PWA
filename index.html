@@ -10,11 +10,13 @@
 	</head>
 	<body>
 		<h3>hello PWA</h3>
-
+<p>new text</p>
 	</body>
 	<script>
-if(navigator.serviceWork!=null){
-	navigator.serviceWork.register('sw.js').then(function(registration){console.log('Registered events at scope:',registration.scope)})
+if(navigator.serviceWorker!=null){
+	navigator.serviceWorker.register('sw.js')
+			.then(function(registration){
+				console.log('Registered events at scope:',registration.scope)});
 }
 	</script>
 
