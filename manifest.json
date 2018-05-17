@@ -1,12 +1,12 @@
 {
-	"name":"Minimal app try PWA",
-	"short_name":"Minimal PWA",
+	"name":"Li PWA",
+	"short_name":"Li PWA",
 	"display":"standalone",
-	"theme-color":"#8888ff",
+
 	"background_color":"#aaaaff",
 	"icons":[{
 		"src":"eat.png",
-		"sizes":"120*120",
+		"sizes":"120x120",
 		"type":"image/png"
 		}]
 }

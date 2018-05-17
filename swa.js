@@ -138,3 +138,24 @@ self.addEventListener('fetch', function (event) {
 // })
 // );
 // });
+
+
+self.addEventListener('push', function(event) {
+    var title = 'Yay a message.';
+    var body = 'We have received a push message.';
+    var icon = '/eat.png';
+    var tag = '推送消息';
+    var data = {
+        doge: {
+            wow: 'such amaze notification data'
+        }
+    };
+    event.waitUntil(
+        self.registration.showNotification(title, {
+            body: body,
+            icon: icon,
+            tag: tag,
+            data: data
+        })
+    );
+});
